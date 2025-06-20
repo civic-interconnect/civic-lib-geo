@@ -1,6 +1,6 @@
 # tests/test_constants.py
 
-import civic_lib_geo.constants as c
+import civic_lib_geo.us_constants as c
 
 
 def test_state_codes_length():

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "civic-lib-geo"
-version = "0.2.0"
+version = "0.2.1"
 description = "Shared internal gis library for Civic Interconnect"
 authors = [
     { name="Civic Interconnect", email="info@civic-interconnect.org" }
@@ -22,7 +22,7 @@ dependencies = [
     "rtree",
     "geopandas",
     "topojson",
-    "civic-lib @ git+https://github.com/civic-interconnect/civic-interconnect-lib.git@main"
+    "civic-lib-core @ git+https://github.com/civic-interconnect/civic-lib-core.git@main"
 ]
 
 [project.urls]
