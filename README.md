@@ -2,7 +2,7 @@
 
 > Shared gis library for Civic Interconnect
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](https://github.com/civic-interconnect/civic-lib-gis/releases)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/civic-interconnect/civic-lib-gis/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Tests](https://github.com/civic-interconnect/civic-lib-gis/actions/workflows/tests.yml/badge.svg)](https://github.com/civic-interconnect/civic-lib-gis/actions/workflows/tests.yml)
 
@@ -30,7 +30,7 @@ git pull
 ruff check . --fix
 pytest tests
 py bump_version.py 0.1.0 0.1.0
-.\release.ps1 -Version v0.1.0
+.\release.ps1 -Version 0.1.0
 ```
 
 It will update these files to the new version:
@@ -49,10 +49,10 @@ pytest
 pre-commit autoupdate --repo https://github.com/pre-commit/pre-commit-hooks
 ruff check . --fix
 git add .
-git commit -m "Release: v0.1.0"
+git commit -m "Release: 0.1.0"
 git push origin main
-git tag v0.1.0
-git push origin v0.1.0
+git tag 0.1.0
+git push origin 0.1.0
 ```
 
 
