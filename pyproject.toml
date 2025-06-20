@@ -3,8 +3,8 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "civic-lib-gis"
-version = "0.1.0"
+name = "civic-lib-geo"
+version = "0.2.0"
 description = "Shared internal gis library for Civic Interconnect"
 authors = [
     { name="Civic Interconnect", email="info@civic-interconnect.org" }
@@ -15,10 +15,6 @@ requires-python = ">=3.10"
 
 dependencies = [
     "PyYAML",
-    "requests",
-    "gql[aiohttp]",
-    "requests",
-    "gql[aiohttp]",
     "pandas",
     "fiona",
     "shapely",
@@ -26,11 +22,12 @@ dependencies = [
     "rtree",
     "geopandas",
     "topojson",
+    "civic-lib @ git+https://github.com/civic-interconnect/civic-interconnect-lib.git@main"
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/civic-interconnect/civic-lib-gis"
-"Source" = "https://github.com/civic-interconnect/civic-lib-gis"
+"Homepage" = "https://github.com/civic-interconnect/civic-lib-geo"
+"Source" = "https://github.com/civic-interconnect/civic-lib-geo"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

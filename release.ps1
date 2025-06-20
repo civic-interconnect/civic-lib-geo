@@ -17,19 +17,19 @@ pre-commit autoupdate --repo https://github.com/pre-commit/pre-commit-hooks
 if (Test-Path build) { Remove-Item -Recurse -Force build }
 
 # Reinstall package in editable mode
-pip uninstall civic-lib -y
+pip uninstall civic-lib-geo -y
 pip install -e .
 
 # Lint and test
-ruff check . --fix
-pytest
+ruff check . --fix || exit $LASTEXITCODE
+pytest || exit $LASTEXITCODE
 
 # Git commit and tag
 git add .
-git commit -m "Release: civic-lib $Version"
+git commit -m "Release: v$Version"
 git push origin main
 
-git tag $Version
-git push origin $Version
+git tag v$Version
+git push origin v$Version
 
-Write-Host "`nRelease $Version completed successfully."
+Write-Host "`nRelease v$Version completed successfully."

@@ -2,7 +2,7 @@ from pathlib import Path
 
 import geopandas as gpd
 
-from civic_lib_gis.shapefile_utils import (
+from civic_lib_geo.shapefile_utils import (
     convert_shapefile_to_geojson,
     load_shapefile,
 )

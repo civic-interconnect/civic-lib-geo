@@ -1,5 +1,5 @@
 """
-src/civic_lib_gis/fips_utils.py - Utilities for working with FIPS codes.
+src/civic_lib_geo/fips_utils.py - Utilities for working with FIPS codes.
 """
 
 from pathlib import Path

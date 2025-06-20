@@ -1,0 +1,190 @@
+# US state codes and mappings
+
+US_STATE_CODES = [
+    "AL",
+    "AK",
+    "AZ",
+    "AR",
+    "CA",
+    "CO",
+    "CT",
+    "DE",
+    "FL",
+    "GA",
+    "HI",
+    "ID",
+    "IL",
+    "IN",
+    "IA",
+    "KS",
+    "KY",
+    "LA",
+    "ME",
+    "MD",
+    "MA",
+    "MI",
+    "MN",
+    "MS",
+    "MO",
+    "MT",
+    "NE",
+    "NV",
+    "NH",
+    "NJ",
+    "NM",
+    "NY",
+    "NC",
+    "ND",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VT",
+    "VA",
+    "WA",
+    "WV",
+    "WI",
+    "WY",
+]
+
+US_STATE_ABBR_TO_NAME = {
+    "AL": "Alabama",
+    "AK": "Alaska",
+    "AZ": "Arizona",
+    "AR": "Arkansas",
+    "CA": "California",
+    "CO": "Colorado",
+    "CT": "Connecticut",
+    "DE": "Delaware",
+    "FL": "Florida",
+    "GA": "Georgia",
+    "HI": "Hawaii",
+    "ID": "Idaho",
+    "IL": "Illinois",
+    "IN": "Indiana",
+    "IA": "Iowa",
+    "KS": "Kansas",
+    "KY": "Kentucky",
+    "LA": "Louisiana",
+    "ME": "Maine",
+    "MD": "Maryland",
+    "MA": "Massachusetts",
+    "MI": "Michigan",
+    "MN": "Minnesota",
+    "MS": "Mississippi",
+    "MO": "Missouri",
+    "MT": "Montana",
+    "NE": "Nebraska",
+    "NV": "Nevada",
+    "NH": "New Hampshire",
+    "NJ": "New Jersey",
+    "NM": "New Mexico",
+    "NY": "New York",
+    "NC": "North Carolina",
+    "ND": "North Dakota",
+    "OH": "Ohio",
+    "OK": "Oklahoma",
+    "OR": "Oregon",
+    "PA": "Pennsylvania",
+    "RI": "Rhode Island",
+    "SC": "South Carolina",
+    "SD": "South Dakota",
+    "TN": "Tennessee",
+    "TX": "Texas",
+    "UT": "Utah",
+    "VT": "Vermont",
+    "VA": "Virginia",
+    "WA": "Washington",
+    "WV": "West Virginia",
+    "WI": "Wisconsin",
+    "WY": "Wyoming",
+}
+
+
+US_STATE_ABBR_TO_FIPS = {
+    "AL": "01",
+    "AK": "02",
+    "AZ": "04",
+    "AR": "05",
+    "CA": "06",
+    "CO": "08",
+    "CT": "09",
+    "DE": "10",
+    "FL": "12",
+    "GA": "13",
+    "HI": "15",
+    "ID": "16",
+    "IL": "17",
+    "IN": "18",
+    "IA": "19",
+    "KS": "20",
+    "KY": "21",
+    "LA": "22",
+    "ME": "23",
+    "MD": "24",
+    "MA": "25",
+    "MI": "26",
+    "MN": "27",
+    "MS": "28",
+    "MO": "29",
+    "MT": "30",
+    "NE": "31",
+    "NV": "32",
+    "NH": "33",
+    "NJ": "34",
+    "NM": "35",
+    "NY": "36",
+    "NC": "37",
+    "ND": "38",
+    "OH": "39",
+    "OK": "40",
+    "OR": "41",
+    "PA": "42",
+    "RI": "44",
+    "SC": "45",
+    "SD": "46",
+    "TN": "47",
+    "TX": "48",
+    "UT": "49",
+    "VT": "50",
+    "VA": "51",
+    "WA": "53",
+    "WV": "54",
+    "WI": "55",
+    "WY": "56",
+}
+
+US_STATE_FIPS_TO_ABBR = {v: k for k, v in US_STATE_ABBR_TO_FIPS.items()}
+
+US_STATE_NAME_TO_ABBR = {v: k for k, v in US_STATE_ABBR_TO_NAME.items()}
+
+
+US_STATE_RECORDS = [
+    {
+        "abbr": abbr,
+        "name": US_STATE_ABBR_TO_NAME[abbr],
+        "fips": US_STATE_ABBR_TO_FIPS[abbr],
+    }
+    for abbr in US_STATE_CODES
+]
+US_STATE_RECORDS_BY_FIPS = {record["fips"]: record for record in US_STATE_RECORDS}
+
+US_STATE_RECORDS_BY_ABBR = {record["abbr"]: record for record in US_STATE_RECORDS}
+
+US_STATE_RECORDS_BY_NAME = {record["name"]: record for record in US_STATE_RECORDS}
+
+US_STATE_RECORDS_BY_NAME_LOWER = {record["name"].lower(): record for record in US_STATE_RECORDS}
+
+US_STATE_RECORDS_BY_ABBR_LOWER = {record["abbr"].lower(): record for record in US_STATE_RECORDS}
+
+US_STATE_RECORDS_BY_FIPS_LOWER = {record["fips"].lower(): record for record in US_STATE_RECORDS}
+
+US_STATE_CHOICES = [(abbr, US_STATE_ABBR_TO_NAME[abbr]) for abbr in US_STATE_CODES]
+
+US_STATE_CHOICES_BY_FIPS = [(record["fips"], record["name"]) for record in US_STATE_RECORDS]

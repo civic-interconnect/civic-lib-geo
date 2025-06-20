@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from civic_lib_gis.fips_utils import (
+from civic_lib_geo.fips_utils import (
     get_fips_by_state_code,
     get_state_fips_df,
     get_state_name_by_code,

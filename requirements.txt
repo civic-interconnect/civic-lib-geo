@@ -7,15 +7,11 @@ pip
 setuptools
 wheel
 
-# YAML parsing (used for config.yaml and report outputs)
+# YAML for manifest metadata
 PyYAML
 
-# Civic Interconnect libraries
--e git+https://github.com/civic-interconnect/civic-interconnect-lib.git@main#egg=civic-lib
-
-# HTTP client (REST + GraphQL)
-requests
-gql[aiohttp]
+# Civic Interconnect libraries in pyproject.toml
+# -e git+https://github.com/civic-interconnect/civic-interconnect-lib.git@main#egg=civic-lib
 
 # Data processing and analysis
 pandas

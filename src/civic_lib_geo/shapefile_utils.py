@@ -1,5 +1,5 @@
 """
-src/civic_lib_gis/shapefile_utils.py - Shapefile utility functions for Civic Interconnect.
+src/civic_lib_geo/shapefile_utils.py - Shapefile utility functions for Civic Interconnect.
 """
 
 from pathlib import Path

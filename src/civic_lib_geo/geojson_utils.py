@@ -1,5 +1,5 @@
 """
-src/civic_lib_gis/geojson_utils.py - GeoJSON utility functions for Civic Interconnect.
+src/civic_lib_geo/geojson_utils.py - GeoJSON utility functions for Civic Interconnect.
 """
 
 import json
