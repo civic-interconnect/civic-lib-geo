@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "civic-lib-gis"
+version = "0.1.0"
+description = "Shared internal gis library for Civic Interconnect"
+authors = [
+    { name="Civic Interconnect", email="info@civic-interconnect.org" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "PyYAML",
+    "requests",
+    "gql[aiohttp]",
+    "requests",
+    "gql[aiohttp]",
+    "pandas",
+    "fiona",
+    "shapely",
+    "pyproj",
+    "rtree",
+    "geopandas",
+    "topojson",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/civic-interconnect/civic-lib-gis"
+"Source" = "https://github.com/civic-interconnect/civic-lib-gis"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+fix = true
+unsafe-fixes = true  # includes formatter-like changes
+preview = true  # enables Ruff formatter
+
+[tool.ruff.lint]
+extend-select = ["E", "F", "W", "I", "UP", "C90", "N", "B", "A", "SIM"]
+ignore = ["E501"]  # line length handled by formatter
+
+[tool.ruff.format]
+docstring-code-format = true

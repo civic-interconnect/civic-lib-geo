@@ -1,0 +1,31 @@
+# ======================================================
+# ESSENTIAL EXTERNAL TOOLS
+# ======================================================
+
+# Up-to-date package management tools
+pip
+setuptools
+wheel
+
+# YAML parsing (used for config.yaml and report outputs)
+PyYAML
+
+# Civic Interconnect libraries
+-e git+https://github.com/civic-interconnect/civic-interconnect-lib.git@main#egg=civic-lib
+
+# HTTP client (REST + GraphQL)
+requests
+gql[aiohttp]
+
+# Data processing and analysis
+pandas
+
+# geopandas and related libraries for geospatial data handling
+fiona
+shapely
+pyproj
+rtree
+geopandas
+
+# exporting and importing GeoJSON data
+topojson
