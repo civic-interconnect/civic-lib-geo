@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "civic-lib-geo"
-version = "0.2.1"
+version = "0.2.2"
 description = "Shared internal gis library for Civic Interconnect"
 authors = [
     { name="Civic Interconnect", email="info@civic-interconnect.org" }

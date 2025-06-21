@@ -1,4 +1,6 @@
 """
+src/civic_lib_geo/us_constants.py
+
 US State Code Constants for Civic Interconnect
 
 This module defines reusable mappings and lookup records for U.S. state information,
@@ -269,3 +271,9 @@ def list_state_choices() -> list[tuple[str, str]]:
 def list_state_choices_by_fips() -> list[tuple[str, str]]:
     """Return list of (FIPS, name) tuples for all states (for dropdowns/UI)."""
     return US_STATE_CHOICES_BY_FIPS
+
+
+def get_state_dir_name(state_abbr: str) -> str:
+    """Return the standardized directory name for a state (full lowercase name with underscores)."""
+    name = US_STATE_ABBR_TO_NAME[state_abbr]
+    return name.lower().replace(" ", "_")

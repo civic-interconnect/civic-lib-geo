@@ -37,8 +37,8 @@ pre-commit run --all-files
 pytest tests
 
 # If New Release: bump from old to new
-py _ci_bump_version.py 0.2.0 0.2.1
+py _ci_bump_version.py 0.2.1 0.2.2
 
 # If New Release: push commit and tag
-.\_ci_release.ps1 -Version 0.2.1
+.\_ci_release.ps1 -Version 0.2.2
 ```
