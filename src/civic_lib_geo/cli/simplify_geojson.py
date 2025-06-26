@@ -15,8 +15,12 @@ from pathlib import Path
 
 from civic_lib_core import log_utils
 
-from civic_lib_geo.cli.cli_utils import apply_to_geojson_folder
-from civic_lib_geo.geojson_utils import load_geojson, save_geojson, simplify_geojson
+from civic_lib_geo.geojson_utils import (
+    apply_to_geojson_folder,
+    load_geojson,
+    save_geojson,
+    simplify_geojson,
+)
 
 logger = log_utils.logger
 

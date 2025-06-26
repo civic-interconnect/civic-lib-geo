@@ -1,5 +1,5 @@
-site_name: Civic Lib Geo Documentation
-site_description: Documentation for Civic Lib Geo
+site_name: civic-lib-geo Documentation
+site_description: Documentation for civic-lib-geo
 theme:
   name: material
   palette:
@@ -11,27 +11,8 @@ theme:
 nav:
 - Home: index.md
 - API Reference:
-  - Api Utils: api/api_utils.md
-  - Config Utils: api/config_utils.md
-  - Date Utils: api/date_utils.md
-  - Dev Utils: api/dev_utils.md
-  - Doc Utils: api/doc_utils.md
-  - Error Utils: api/error_utils.md
-  - File Utils: api/file_utils.md
-  - Log Utils: api/log_utils.md
-  - Path Utils: api/path_utils.md
-  - Query Utils: api/query_utils.md
-  - Report Archiver: api/report_archiver.md
-  - Report Constants: api/report_constants.md
-  - Report Formatter: api/report_formatter.md
-  - Report Indexer: api/report_indexer.md
-  - Report Reader: api/report_reader.md
-  - Report Summary: api/report_summary.md
-  - Report Utils: api/report_utils.md
-  - Report Writer: api/report_writer.md
-  - Schema Utils: api/schema_utils.md
-  - Version Utils: api/version_utils.md
-  - Yaml Utils: api/yaml_utils.md
+  - Developer: api/DEVELOPER.md
+  - Readme: api/README.md
 plugins:
 - search
 markdown_extensions:

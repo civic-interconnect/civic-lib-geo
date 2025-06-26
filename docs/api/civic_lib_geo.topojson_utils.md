@@ -1,4 +1,4 @@
-# Module `report_summary`
+# Module `civic_lib_geo.topojson_utils`
 
 ## Classes
 
@@ -14,10 +14,6 @@ but cannot instantiate a WindowsPath on a POSIX system or vice versa.
 
 ## Functions
 
-### `write_markdown_summary(report: dict, path: pathlib.Path) -> None`
+### `convert_topojson_to_geojson(topojson_path: pathlib.Path, geojson_path: pathlib.Path) -> pathlib.Path`
 
-Write a Markdown summary of a report's key metadata.
-
-Args:
-    report (dict): The report data (already parsed).
-    path (Path): The output path to write the .md file.
+Convert a TopoJSON file to a GeoJSON file using geopandas or CLI tools.

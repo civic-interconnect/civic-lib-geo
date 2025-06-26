@@ -1,6 +1,6 @@
 [project]
 name = "civic-lib-geo"
-version = "0.2.2"
+version = "0.2.3"
 description = "Shared internal geo library for Civic Interconnect"
 authors = [
     { name="Civic Interconnect", email="info@civic-interconnect.org" }
@@ -35,7 +35,6 @@ dev = [
   "build",
   "twine",
 ]
-
 
 [project.urls]
 "Homepage" = "https://github.com/civic-interconnect/civic-lib-geo"
@@ -72,7 +71,6 @@ docstring-code-format = true
 [tool.pytest.ini_options]
 minversion = "7.0"
 addopts = "-ra --strict-markers"
-testpaths = [
-  "tests"
-]
+pythonpath = ["src"]
+testpaths = ["tests"]
 python_files = "test_*.py"

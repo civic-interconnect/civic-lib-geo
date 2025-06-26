@@ -24,8 +24,10 @@ Visit local API docs at: <http://localhost:8000>
 
 ## Releasing New Version
 
-Delete .venv. Recreate and activate.
-Run pre-release preparation and verification.
+Before publishing a new version, delete .venv. and recreate and activate.
+Run pre-release preparation, installing and upgrading without the -e editable flag.
+Verify all tests pass. Run prep-code (twice if needed).
+Verify the docs are generated and appear correctly.
 
 ```powershell
 git pull
@@ -34,7 +36,7 @@ py -m venv .venv
 py -m pip install --upgrade pip setuptools wheel --prefer-binary
 py -m pip install --upgrade .[dev]
 pytest tests
-civic-dev prep-code        # repeat if needed
+civic-dev prep-code
 civic-dev publish-api
 mkdocs serve
 ```
