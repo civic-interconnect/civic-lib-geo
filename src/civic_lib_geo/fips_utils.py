@@ -1,5 +1,9 @@
 """
-src/civic_lib_geo/fips_utils.py - Utilities for working with FIPS codes.
+civic_lib_geo/fips_utils.py
+
+Utilities for working with FIPS codes.
+
+MIT License — maintained by Civic Interconnect
 """
 
 from pathlib import Path

@@ -29,6 +29,7 @@ build/
 dist/
 .ruff_cache/
 .pytest_cache/
+.ipynb_checkpoints/
 
 # ----------------------------------------
 # Logs (runtime generated)
@@ -47,3 +48,5 @@ storage/
 *.bak
 *.tmp
 *.log
+tmp/
+.github/workflows/__pycache__/

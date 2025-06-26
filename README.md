@@ -1,26 +1,19 @@
 # civic-lib-geo
 
-> Shared gis library for Civic Interconnect
-
 [![Version](https://img.shields.io/badge/version-0.2.2-blue)](https://github.com/civic-interconnect/civic-lib-geo/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Tests](https://github.com/civic-interconnect/civic-lib-geo/actions/workflows/tests.yml/badge.svg)](https://github.com/civic-interconnect/civic-lib-geo/actions/workflows/tests.yml)
 
-## Local Development
-
-See [REF_DEV.md](./REF_DEV.md). Then:
-
-```shell
-py scripts/main.py
-```
+> Shared gis library for Civic Interconnect
 
 
-## Build and Publish to PyPi
+## Installation When Building Civic Interconnect Projects
 
-The last command requires a PyPi API token to publish.
+Add to the pyproject.toml:
 
-```powershell
-py -m pip install --upgrade build twine
-py -m build
-py -m twine upload dist/*
-```
+`"civic-lib-geo @ git+https://github.com/civic-interconnect/civic-lib-geo.git@main"`
+
+
+## Development
+
+See [DEVELOPER.md](./DEVELOPER.md)

@@ -1,20 +1,18 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "civic-lib-geo"
 version = "0.2.2"
-description = "Shared internal gis library for Civic Interconnect"
+description = "Shared internal geo library for Civic Interconnect"
 authors = [
     { name="Civic Interconnect", email="info@civic-interconnect.org" }
 ]
 license = { text = "MIT" }
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 
 dependencies = [
     "PyYAML",
+    "typer[all]",
+    "rich",
     "pandas",
     "fiona",
     "shapely",
@@ -25,19 +23,44 @@ dependencies = [
     "civic-lib-core @ git+https://github.com/civic-interconnect/civic-lib-core.git@main"
 ]
 
+[project.optional-dependencies]
+dev = [
+  "mkdocs",
+  "mkdocs-material",
+  "pre-commit",
+  "pytest",
+  "pytest-asyncio",
+  "pytest-cov",
+  "ruff",
+  "build",
+  "twine",
+]
+
+
 [project.urls]
 "Homepage" = "https://github.com/civic-interconnect/civic-lib-geo"
 "Source" = "https://github.com/civic-interconnect/civic-lib-geo"
 
+[project.scripts]
+civic-dev = "civic_dev.cli:app"
+civic-geo = "civic_lib_geo.cli.cli:app"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [tool.setuptools]
 package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.ruff]
 line-length = 100
 target-version = "py312"
 fix = true
-unsafe-fixes = true  # includes formatter-like changes
-preview = true  # enables Ruff formatter
+unsafe-fixes = true
+preview = true
 
 [tool.ruff.lint]
 extend-select = ["E", "F", "W", "I", "UP", "C90", "N", "B", "A", "SIM"]
@@ -45,3 +68,11 @@ ignore = ["E501"]  # line length handled by formatter
 
 [tool.ruff.format]
 docstring-code-format = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra --strict-markers"
+testpaths = [
+  "tests"
+]
+python_files = "test_*.py"

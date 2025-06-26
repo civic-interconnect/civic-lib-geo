@@ -1,3 +1,8 @@
+"""tests/test_shapefile_utils.py
+
+Test suite for shapefile utility functions in civic_lib_geo.shapefile_utils.
+"""
+
 from pathlib import Path
 
 import geopandas as gpd

@@ -1,5 +1,5 @@
 """
-src/civic_lib_geo/us_constants.py
+civic_lib_geo/us_constants.py
 
 US State Code Constants for Civic Interconnect
 

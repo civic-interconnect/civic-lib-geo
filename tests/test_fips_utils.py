@@ -1,4 +1,7 @@
-# tests/test_fips_utils.py
+"""tests/test_fips_utils.py
+
+Test suite for FIPS utility functions in civic_lib_geo.fips_utils.
+"""
 
 from pathlib import Path
 

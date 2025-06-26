@@ -1,4 +1,8 @@
-# tests/test_constants.py
+"""
+tests/test_constants.py
+
+Test suite for US state constants in civic_lib_geo.us_constants.
+"""
 
 import civic_lib_geo.us_constants as c
 
