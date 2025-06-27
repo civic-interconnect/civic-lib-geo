@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Tests](https://github.com/civic-interconnect/civic-lib-geo/actions/workflows/tests.yml/badge.svg)](https://github.com/civic-interconnect/civic-lib-geo/actions/workflows/tests.yml)
 
-> Shared gis library for Civic Interconnect
+> Shared gis library for [Civic Interconnect](https://github.com/civic-interconnect)
 
 
 ## Installation When Building Civic Interconnect Projects

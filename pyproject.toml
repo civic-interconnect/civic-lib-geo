@@ -62,7 +62,7 @@ unsafe-fixes = true
 preview = true
 
 [tool.ruff.lint]
-extend-select = ["E", "F", "W", "I", "UP", "C90", "N", "B", "A", "SIM"]
+extend-select = ["E", "F", "W", "I", "UP", "C90", "N", "B", "A", "SIM", "TCH"]
 ignore = ["E501"]  # line length handled by formatter
 
 [tool.ruff.format]
@@ -74,3 +74,11 @@ addopts = "-ra --strict-markers"
 pythonpath = ["src"]
 testpaths = ["tests"]
 python_files = "test_*.py"
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
