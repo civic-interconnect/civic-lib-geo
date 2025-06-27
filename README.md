@@ -6,13 +6,11 @@
 
 > Shared gis library for [Civic Interconnect](https://github.com/civic-interconnect)
 
-
 ## Installation When Building Civic Interconnect Projects
 
 Add to the pyproject.toml:
 
 `"civic-lib-geo @ git+https://github.com/civic-interconnect/civic-lib-geo.git@main"`
-
 
 ## Development
 
