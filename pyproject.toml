@@ -1,6 +1,6 @@
 [project]
 name = "civic-lib-geo"
-version = "0.2.3"
+version = "0.2.4"
 description = "Shared internal geo library for Civic Interconnect"
 authors = [
     { name="Civic Interconnect", email="info@civic-interconnect.org" }

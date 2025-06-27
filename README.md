@@ -1,6 +1,6 @@
 # civic-lib-geo
 
-[![Version](https://img.shields.io/badge/version-0.2.3-blue)](https://github.com/civic-interconnect/civic-lib-geo/releases)
+[![Version](https://img.shields.io/badge/version-0.2.4-blue)](https://github.com/civic-interconnect/civic-lib-geo/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Tests](https://github.com/civic-interconnect/civic-lib-geo/actions/workflows/tests.yml/badge.svg)](https://github.com/civic-interconnect/civic-lib-geo/actions/workflows/tests.yml)
 

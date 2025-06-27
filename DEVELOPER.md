@@ -44,7 +44,7 @@ mkdocs serve
 After verifying changes:
 
 ```powershell
-civic-dev bump-version 0.2.2 0.2.3
+civic-dev bump-version 0.2.3 0.2.4
 civic-dev release
 ```
 
