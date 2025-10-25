@@ -57,7 +57,7 @@ docs = [  # Add all to deptry ignores
   "mkdocs-literate-nav",
   "mkdocs-material",
   "mkdocs-static-i18n",
-  "mkdocstrings",
+  "mkdocstrings[python]>=0.18",
   "mike",
 ]
 
@@ -231,6 +231,7 @@ force-sort-within-sections = true
 [tool.ruff.lint.per-file-ignores]
 "src/**/__init__.py" = ["D104", "F401"]  # F401 for re-exports
 "tests/**/*.py" = ["TID251", "TID252", "S101", "D", "PLR2004"]  # PLR2004 for magic values
+"src/**/_version.py" = ["ALL"] 
 
 [tool.setuptools]
 include-package-data = true
