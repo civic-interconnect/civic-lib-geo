@@ -244,11 +244,11 @@ package-dir = {"" = "src"}
 "civic_lib_geo" = ["py.typed", "*.yaml"]
 
 [tool.setuptools.packages.find]
-namespaces = false # TODO: move to civic.geo
+namespaces = false # TODO: change when we move to civic.geo
 where = ["src"]
 
 [tool.setuptools_scm]
 fallback_version = "0.0.1"
-local_scheme = "dirty-tag"
+local_scheme = "no-local-version"
 version_file = "src/civic_lib_geo/_version.py"
 version_scheme = "guess-next-dev"
