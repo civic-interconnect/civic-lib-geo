@@ -1,5 +1,4 @@
-"""
-topojson_to_geojson.py
+"""topojson_to_geojson.py.
 
 Command-line utility to convert a TopoJSON file to GeoJSON.
 
@@ -7,8 +6,8 @@ Used by:
     civic-geo topojson-to-geojson TOPOJSON_PATH GEOJSON_PATH
 """
 
-import sys
 from pathlib import Path
+import sys
 
 from civic_lib_core import log_utils
 
@@ -16,8 +15,7 @@ logger = log_utils.logger
 
 
 def main(topo_path: Path, geojson_path: Path) -> int:
-    """
-    Convert a TopoJSON file to GeoJSON using GeoPandas (if supported).
+    """Convert a TopoJSON file to GeoJSON using GeoPandas (if supported).
 
     Args:
         topo_path (Path): Input .topojson file path.

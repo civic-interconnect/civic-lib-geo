@@ -1,18 +1,17 @@
-"""
-civic_lib_geo/geojson_utils.py
+"""civic_lib_geo/geojson_utils.py.
 
 GeoJSON utility functions for Civic Interconnect.
 
 MIT License — maintained by Civic Interconnect
 """
 
-import json
 from collections.abc import Callable
+import json
 from pathlib import Path
 from typing import Any
 
-import geopandas as gpd
 from civic_lib_core import log_utils
+import geopandas as gpd
 
 __all__ = [
     "apply_to_geojson_folder",
@@ -39,8 +38,7 @@ def apply_to_geojson_folder(
     tolerance: float | None = None,
     max_features: int | None = None,
 ):
-    """
-    Apply an action to every .geojson file in a folder.
+    """Apply an action to every .geojson file in a folder.
 
     Args:
         folder (Path): Path to folder containing .geojson files.
@@ -75,8 +73,7 @@ def chunk_geojson_features(
     output_dir: str | Path = "chunks",
     base_name: str = "chunk",
 ) -> list[Path]:
-    """
-    Split a GeoJSON FeatureCollection into multiple smaller files.
+    """Split a GeoJSON FeatureCollection into multiple smaller files.
 
     Args:
         geojson: Loaded GeoJSON dictionary (must contain a 'features' list).
@@ -117,8 +114,7 @@ def chunk_geojson_features(
 
 
 def get_file_size_mb(path: str | Path) -> float:
-    """
-    Return the file size in megabytes (MB).
+    """Return the file size in megabytes (MB).
 
     Args:
         path: Path to the file.
@@ -138,8 +134,7 @@ def get_file_size_mb(path: str | Path) -> float:
 
 
 def is_valid_geojson_feature_collection(obj: dict) -> bool:
-    """
-    Quick check if an object looks like a valid GeoJSON FeatureCollection.
+    """Quick check if an object looks like a valid GeoJSON FeatureCollection.
 
     Args:
         obj: Dictionary to check.
@@ -155,8 +150,7 @@ def is_valid_geojson_feature_collection(obj: dict) -> bool:
 
 
 def list_geojson_files(folder: Path) -> list[Path]:
-    """
-    Return a list of .geojson files in the specified folder.
+    """Return a list of .geojson files in the specified folder.
 
     Args:
         folder (Path): Directory to search.
@@ -168,8 +162,7 @@ def list_geojson_files(folder: Path) -> list[Path]:
 
 
 def load_geojson(path: Path) -> gpd.GeoDataFrame:
-    """
-    Load a GeoJSON file into a GeoDataFrame.
+    """Load a GeoJSON file into a GeoDataFrame.
 
     Args:
         path (Path): Path to the GeoJSON file.
@@ -183,8 +176,7 @@ def load_geojson(path: Path) -> gpd.GeoDataFrame:
 
 
 def needs_chunking(path: str | Path, max_mb: float = 25.0) -> bool:
-    """
-    Determine whether the GeoJSON file exceeds the size threshold.
+    """Determine whether the GeoJSON file exceeds the size threshold.
 
     Args:
         path: Path to the file.
@@ -200,8 +192,7 @@ def needs_chunking(path: str | Path, max_mb: float = 25.0) -> bool:
 
 
 def read_geojson_props(path: Path) -> list[dict[str, Any]]:
-    """
-    Load only the properties from a GeoJSON file.
+    """Load only the properties from a GeoJSON file.
 
     Args:
         path (Path): Path to the GeoJSON file.
@@ -209,14 +200,13 @@ def read_geojson_props(path: Path) -> list[dict[str, Any]]:
     Returns:
         list[dict[str, Any]]: A list of property dictionaries from each feature.
     """
-    with open(path, encoding="utf-8") as f:
+    with path.open(encoding="utf-8") as f:
         data = json.load(f)
     return [feature["properties"] for feature in data["features"]]
 
 
 def save_geojson(gdf: "gpd.GeoDataFrame", path: Path, indent: int = 2) -> Path:
-    """
-    Save a GeoDataFrame to GeoJSON format.
+    """Save a GeoDataFrame to GeoJSON format.
 
     Args:
         gdf (gpd.GeoDataFrame): The GeoDataFrame to save.
@@ -226,14 +216,12 @@ def save_geojson(gdf: "gpd.GeoDataFrame", path: Path, indent: int = 2) -> Path:
     Returns:
         Path: The path to the saved file.
     """
-
     gdf.to_file(path, driver="GeoJSON")
     return path
 
 
 def simplify_geojson(gdf: gpd.GeoDataFrame, tolerance: float) -> gpd.GeoDataFrame:
-    """
-    Return a simplified copy of the GeoDataFrame using the given tolerance.
+    """Return a simplified copy of the GeoDataFrame using the given tolerance.
 
     Args:
         gdf (gpd.GeoDataFrame): The input GeoDataFrame.

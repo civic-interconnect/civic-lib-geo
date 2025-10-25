@@ -1,5 +1,4 @@
-"""
-cli.py
+"""cli.py.
 
 Command-line interface (CLI) for civic-lib-geo.
 
@@ -12,11 +11,11 @@ Provides repo-specific commands for:
 Run `civic-geo --help` for usage.
 """
 
-import sys
 from pathlib import Path
+import sys
 
-import typer
 from civic_lib_core import log_utils
+import typer
 
 from civic_lib_geo import geojson_utils
 
@@ -33,9 +32,7 @@ SINGLE_FILE_OPT = typer.Option(
 @app.command("check-size")
 @app.command("size")
 def check_size_command(path: Path):
-    """
-    Report the size of a GeoJSON file and whether it exceeds the GitHub Pages 25MB limit.
-    """
+    """Report the size of a GeoJSON file and whether it exceeds the GitHub Pages 25MB limit."""
     from . import check_size
 
     check_size.main(path)
@@ -48,9 +45,7 @@ def chunk_command(
     max_features: int = 500,
     single_file: Path = SINGLE_FILE_OPT,
 ):
-    """
-    Chunk a GeoJSON file or all files in a folder into smaller files with limited features.
-    """
+    """Chunk a GeoJSON file or all files in a folder into smaller files with limited features."""
     from . import chunk_geojson
 
     if single_file:
@@ -63,9 +58,7 @@ def chunk_command(
 
 @app.command("read-props")
 def props_command(path: Path):
-    """
-    Display the property keys from the first feature of a GeoJSON file.
-    """
+    """Display the property keys from the first feature of a GeoJSON file."""
     from . import read_props
 
     read_props.main(path)
@@ -78,9 +71,7 @@ def simplify_command(
     tolerance: float = 0.01,
     single_file: Path = SINGLE_FILE_OPT,
 ):
-    """
-    Simplify one GeoJSON file or all files in a folder using the given tolerance.
-    """
+    """Simplify one GeoJSON file or all files in a folder using the given tolerance."""
     from . import simplify_geojson
 
     if single_file:
@@ -94,9 +85,7 @@ def simplify_command(
 @app.command("shapefile-to-geojson")
 @app.command("shp-to-geo")
 def shapefile_to_geojson_command(shp_path: Path, geojson_path: Path):
-    """
-    Convert a shapefile to GeoJSON.
-    """
+    """Convert a shapefile to GeoJSON."""
     from . import shapefile_to_geojson
 
     shapefile_to_geojson.main(shp_path, geojson_path)
@@ -105,9 +94,7 @@ def shapefile_to_geojson_command(shp_path: Path, geojson_path: Path):
 @app.command("topojson-to-geojson")
 @app.command("topo-to-geo")
 def topojson_to_geojson_command(topo_path: Path, geojson_path: Path):
-    """
-    Convert a TopoJSON file to GeoJSON using GeoPandas (if supported).
-    """
+    """Convert a TopoJSON file to GeoJSON using GeoPandas (if supported)."""
     from . import topojson_to_geojson
 
     logger.warning("⚠️ TopoJSON support depends on GDAL. Consider using mapshaper if this fails.")
@@ -115,6 +102,14 @@ def topojson_to_geojson_command(topo_path: Path, geojson_path: Path):
 
 
 def main() -> int:
+    """Run the main entry point for the CLI application.
+
+    This function serves as the primary entry point for the command-line interface.
+    It initializes and runs the app, then returns a success status code.
+
+    Returns:
+        int: Exit status code (0 for success).
+    """
     app()
     return 0
 

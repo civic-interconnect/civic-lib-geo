@@ -1,5 +1,4 @@
-"""
-simplify_geojson.py
+"""simplify_geojson.py.
 
 Command-line utility to simplify the geometry of one or more GeoJSON files.
 
@@ -26,8 +25,7 @@ logger = log_utils.logger
 
 
 def simplify_one(path: Path, tolerance: float, output: Path):
-    """
-    Simplify a single GeoJSON file and write the output.
+    """Simplify a single GeoJSON file and write the output.
 
     Args:
         path (Path): Path to the original GeoJSON file.
@@ -51,8 +49,7 @@ def main(
     output: Path | None = None,
     all_files: bool = False,
 ):
-    """
-    Simplify a single file or all .geojson files in a folder.
+    """Simplify a single file or all .geojson files in a folder.
 
     Args:
         path (Path): Input file or folder.

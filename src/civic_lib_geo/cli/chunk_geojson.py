@@ -1,5 +1,4 @@
-"""
-chunk_geojson.py
+"""chunk_geojson.py.
 
 Utility to split a GeoJSON FeatureCollection into smaller files.
 
@@ -9,8 +8,8 @@ Used by civic-geo CLI:
 """
 
 import json
-import sys
 from pathlib import Path
+import sys
 
 from civic_lib_core import log_utils
 
@@ -20,8 +19,7 @@ logger = log_utils.logger
 
 
 def chunk_one(path: Path, max_features: int, output_dir: Path):
-    """
-    Chunk a single GeoJSON file and write the output files.
+    """Chunk a single GeoJSON file and write the output files.
 
     Args:
         path (Path): Path to input GeoJSON file.
@@ -48,8 +46,7 @@ def main(
     output_dir: Path = Path("chunks"),
     all_files: bool = False,
 ) -> int:
-    """
-    Chunk a single file or all .geojson files in a folder.
+    """Chunk a single file or all .geojson files in a folder.
 
     Args:
         path (Path): Input file or folder path.

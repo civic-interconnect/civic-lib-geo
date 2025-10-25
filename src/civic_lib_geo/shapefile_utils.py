@@ -1,5 +1,4 @@
-"""
-civic_lib_geo/shapefile_utils.py
+"""civic_lib_geo/shapefile_utils.py.
 
 Shapefile utility functions for Civic Interconnect.
 
@@ -8,8 +7,8 @@ MIT License — maintained by Civic Interconnect
 
 from pathlib import Path
 
-import geopandas as gpd
 from civic_lib_core import log_utils
+import geopandas as gpd
 
 __all__ = [
     "convert_shapefile_to_geojson",
@@ -19,8 +18,7 @@ logger = log_utils.logger
 
 
 def convert_shapefile_to_geojson(shp_path: Path, geojson_path: Path) -> Path:
-    """
-    Convert a shapefile to a GeoJSON file.
+    """Convert a shapefile to a GeoJSON file.
 
     Args:
         shp_path (Path): Path to the source shapefile (.shp).
@@ -35,8 +33,7 @@ def convert_shapefile_to_geojson(shp_path: Path, geojson_path: Path) -> Path:
 
 
 def load_shapefile(path: Path) -> gpd.GeoDataFrame:
-    """
-    Load a shapefile into a GeoDataFrame.
+    """Load a shapefile into a GeoDataFrame.
 
     Args:
         path (Path): Path to the shapefile (.shp).

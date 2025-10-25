@@ -1,5 +1,4 @@
-"""
-shapefile_to_geojson.py
+"""shapefile_to_geojson.py.
 
 Command-line utility to convert a shapefile to GeoJSON.
 
@@ -7,8 +6,8 @@ Used by:
     civic-geo shapefile-to-geojson SHAPEFILE_PATH GEOJSON_PATH
 """
 
-import sys
 from pathlib import Path
+import sys
 
 from civic_lib_core import log_utils
 
@@ -18,8 +17,7 @@ logger = log_utils.logger
 
 
 def main(shp_path: Path, geojson_path: Path) -> int:
-    """
-    Convert a shapefile to GeoJSON.
+    """Convert a shapefile to GeoJSON.
 
     Args:
         shp_path (Path): Input .shp file path.

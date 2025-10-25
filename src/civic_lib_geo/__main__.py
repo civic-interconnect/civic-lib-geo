@@ -1,8 +1,6 @@
-"""
-civic_lib_geo.__main__
+"""Entry point for Civic Lib Geo CLI.
 
-
-Entry point for Civic Lib Geo CLI.
+File: civic_lib_geo.__main__
 """
 
 from civic_lib_geo.cli.cli import app

@@ -1,5 +1,4 @@
-"""
-civic_lib_geo/fips_utils.py
+"""civic_lib_geo/fips_utils.py.
 
 Utilities for working with FIPS codes.
 
@@ -19,8 +18,7 @@ __all__ = [
 
 
 def read_csv_from_path(source: Path) -> pd.DataFrame:
-    """
-    Reads a CSV file from the given path and returns a DataFrame.
+    """Read a CSV file from the given path and returns a DataFrame.
 
     Args:
         source (Path): Path to the CSV file.
@@ -32,8 +30,7 @@ def read_csv_from_path(source: Path) -> pd.DataFrame:
 
 
 def get_state_fips_df(source: Path | None = None) -> pd.DataFrame:
-    """
-    Load and return a DataFrame of US state FIPS codes.
+    """Load and return a DataFrame of US state FIPS codes.
 
     Args:
         source (Path | None): Path to a CSV file. If None, uses the default embedded CSV.
@@ -54,8 +51,7 @@ def get_state_fips_df(source: Path | None = None) -> pd.DataFrame:
 
 
 def get_fips_by_state_code(state_code: str, source: Path | None = None) -> str:
-    """
-    Returns the FIPS code for a given 2-letter state code.
+    """Return the FIPS code for a given 2-letter state code.
 
     Args:
         state_code (str): A 2-letter state abbreviation (e.g., 'MN').
@@ -75,8 +71,7 @@ def get_fips_by_state_code(state_code: str, source: Path | None = None) -> str:
 
 
 def get_state_name_by_code(state_code: str, source: Path | None = None) -> str:
-    """
-    Returns the full state name for a given 2-letter state code.
+    """Return the full state name for a given 2-letter state code.
 
     Args:
         state_code (str): A 2-letter state abbreviation.

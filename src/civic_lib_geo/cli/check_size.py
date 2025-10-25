@@ -1,5 +1,4 @@
-"""
-check_size.py
+"""check_size.py.
 
 Check the size of a GeoJSON file and whether it exceeds GitHub Pages limits.
 
@@ -7,8 +6,8 @@ Used by civic-geo CLI:
     civic-geo check-size <path>
 """
 
-import sys
 from pathlib import Path
+import sys
 
 from civic_lib_core import log_utils
 
@@ -18,8 +17,7 @@ logger = log_utils.logger
 
 
 def main(path: Path) -> int:
-    """
-    Print the size of a GeoJSON file and whether it exceeds GitHub Pages limits.
+    """Print the size of a GeoJSON file and whether it exceeds GitHub Pages limits.
 
     Args:
         path (Path): Path to the GeoJSON file to inspect.

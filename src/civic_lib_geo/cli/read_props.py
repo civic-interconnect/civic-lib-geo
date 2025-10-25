@@ -1,5 +1,4 @@
-"""
-read_props.py
+"""read_props.py.
 
 Command-line utility to preview feature properties in one or more GeoJSON files.
 
@@ -11,8 +10,8 @@ Supports:
 - A folder of files: `civic-geo read-props data/ --all-files`
 """
 
-import sys
 from pathlib import Path
+import sys
 
 from civic_lib_core import log_utils
 
@@ -22,8 +21,7 @@ logger = log_utils.logger
 
 
 def read_props_one(path: Path, output: Path | None = None, max_rows: int = 5):
-    """
-    Print properties from the first few features in a GeoJSON file.
+    """Print properties from the first few features in a GeoJSON file.
 
     Args:
         path (Path): Path to the GeoJSON file.
@@ -46,8 +44,7 @@ def read_props_one(path: Path, output: Path | None = None, max_rows: int = 5):
 
 
 def main(path: Path, all_files: bool = False) -> int:
-    """
-    Display feature properties for a single file or all .geojson files in a folder.
+    """Display feature properties for a single file or all .geojson files in a folder.
 
     Args:
         path (Path): File or folder path.

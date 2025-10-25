@@ -5,8 +5,8 @@ Test the chunking of GeoJSON files into smaller files
 with a maximum number of features.
 """
 
-import shutil
 from pathlib import Path
+import shutil
 
 from civic_lib_geo.cli.chunk_geojson import main as chunk_geojson_main
 from civic_lib_geo.geojson_utils import (
