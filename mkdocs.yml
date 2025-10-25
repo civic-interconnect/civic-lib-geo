@@ -62,6 +62,21 @@ nav:
       - Home: index.md
       - CLI: cli.md
   - Developer Guide:
-      - Readme: api/README.md
       - API: api.md
       - Workflow: DEVELOPER.md
+  - API Reference:
+      - API Overview: api.md
+      - CLI:
+          - api/civic_lib_geo.cli.cli.md
+          - api/civic_lib_geo.cli.check_size.md
+          - api/civic_lib_geo.cli.chunk_geojson.md
+          - api/civic_lib_geo.cli.read_props.md
+          - api/civic_lib_geo.cli.shapefile_to_geojson.md
+          - api/civic_lib_geo.cli.simplify_geojson.md
+          - api/civic_lib_geo.cli.topojson_to_geojson.md
+      - Utilities:
+          - api/civic_lib_geo.fips_utils.md
+          - api/civic_lib_geo.geojson_utils.md
+          - api/civic_lib_geo.shapefile_utils.md
+          - api/civic_lib_geo.topojson_utils.md
+          - api/civic_lib_geo.us_constants.md

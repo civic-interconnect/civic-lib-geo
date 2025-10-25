@@ -59,6 +59,7 @@ docs = [  # Add all to deptry ignores
   "mkdocs-static-i18n",
   "mkdocstrings[python]>=0.18",
   "mike",
+  "ruff", # required for mkdocstrings
 ]
 
 [project.urls]
@@ -136,7 +137,7 @@ DEP002 = [
   "pytest-cov",
   "pytest-env",
   "twine",
-  "validate-project",
+  "validate-pyproject",
   # Docs dependencies
   "mike",
   "mkdocs",
@@ -147,6 +148,7 @@ DEP002 = [
   "mkdocs-material",
   "mkdocs-static-i18n",
   "mkdocstrings",  
+  "ruff",
 ]
 
 [tool.pyright]
