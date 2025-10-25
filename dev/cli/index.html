@@ -12,28 +12,28 @@
         <meta name="author" content="Civic Interconnect">
       
       
-        <link rel="canonical" href="https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.shapefile_utils/">
+        <link rel="canonical" href="https://civic-interconnect.github.io/civic-lib-core/dev/cli/">
       
       
-        <link rel="prev" href="../civic_lib_geo.geojson_utils/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../civic_lib_geo.topojson_utils/">
+        <link rel="next" href="../api/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>Module civic_lib_geo.shapefile_utils - Civic Lib Core</title>
+        <title>CLI - Civic Lib Core</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#module-civic_lib_geoshapefile_utils" class="md-skip">
+        <a href="#cli-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Civic Lib Core" class="md-header__button md-logo" aria-label="Civic Lib Core" data-md-component="logo">
+    <a href=".." title="Civic Lib Core" class="md-header__button md-logo" aria-label="Civic Lib Core" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Module civic_lib_geo.shapefile_utils
+              CLI
             
           </span>
         </div>
@@ -234,7 +234,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Civic Lib Core" class="md-nav__button md-logo" aria-label="Civic Lib Core" data-md-component="logo">
+    <a href=".." title="Civic Lib Core" class="md-nav__button md-logo" aria-label="Civic Lib Core" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -261,8 +261,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -273,13 +275,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
@@ -295,7 +295,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             User Guide
@@ -309,7 +309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -329,10 +329,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../cli/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    CLI
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -343,6 +365,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#command-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Index
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick help
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -407,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../api/" class="md-nav__link">
         
   
   
@@ -430,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../DEVELOPER/" class="md-nav__link">
+      <a href="../DEVELOPER/" class="md-nav__link">
         
   
   
@@ -457,8 +517,6 @@
       
   
   
-    
-  
   
   
     
@@ -471,11 +529,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -491,7 +551,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             API Reference
@@ -505,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../api/" class="md-nav__link">
         
   
   
@@ -570,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.cli.cli/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.cli.cli/" class="md-nav__link">
         
   
   
@@ -593,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.cli.check_size/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.cli.check_size/" class="md-nav__link">
         
   
   
@@ -616,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.cli.chunk_geojson/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.cli.chunk_geojson/" class="md-nav__link">
         
   
   
@@ -639,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.cli.read_props/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.cli.read_props/" class="md-nav__link">
         
   
   
@@ -662,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.cli.shapefile_to_geojson/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.cli.shapefile_to_geojson/" class="md-nav__link">
         
   
   
@@ -685,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.cli.simplify_geojson/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.cli.simplify_geojson/" class="md-nav__link">
         
   
   
@@ -708,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.cli.topojson_to_geojson/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.cli.topojson_to_geojson/" class="md-nav__link">
         
   
   
@@ -736,8 +796,6 @@
                 
   
   
-    
-  
   
   
     
@@ -747,11 +805,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -767,7 +827,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Utilities
@@ -781,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.fips_utils/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.fips_utils/" class="md-nav__link">
         
   
   
@@ -804,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.geojson_utils/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.geojson_utils/" class="md-nav__link">
         
   
   
@@ -824,32 +884,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Module civic_lib_geo.shapefile_utils
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../api/civic_lib_geo.shapefile_utils/" class="md-nav__link">
         
   
   
@@ -860,83 +898,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Classes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Classes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pathself-args-kwargs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Path(self, *args, **kwargs)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Functions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Functions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#convert_shapefile_to_geojsonshp_path-pathlibpath-geojson_path-pathlibpath-pathlibpath" class="md-nav__link">
-    <span class="md-ellipsis">
-      convert_shapefile_to_geojson(shp_path: pathlib.Path, geojson_path: pathlib.Path) -&gt; pathlib.Path
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#load_shapefilepath-pathlibpath-geopandasgeodataframegeodataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      load_shapefile(path: pathlib.Path) -&gt; geopandas.geodataframe.GeoDataFrame
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -949,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.topojson_utils/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.topojson_utils/" class="md-nav__link">
         
   
   
@@ -972,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../civic_lib_geo.us_constants/" class="md-nav__link">
+      <a href="../api/civic_lib_geo.us_constants/" class="md-nav__link">
         
   
   
@@ -1030,59 +991,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#classes" class="md-nav__link">
+  <a href="#command-index" class="md-nav__link">
     <span class="md-ellipsis">
-      Classes
+      Command Index
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Classes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pathself-args-kwargs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Path(self, *args, **kwargs)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
+  <a href="#quick-help" class="md-nav__link">
     <span class="md-ellipsis">
-      Functions
+      Quick help
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Functions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#convert_shapefile_to_geojsonshp_path-pathlibpath-geojson_path-pathlibpath-pathlibpath" class="md-nav__link">
-    <span class="md-ellipsis">
-      convert_shapefile_to_geojson(shp_path: pathlib.Path, geojson_path: pathlib.Path) -&gt; pathlib.Path
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#load_shapefilepath-pathlibpath-geopandasgeodataframegeodataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      load_shapefile(path: pathlib.Path) -&gt; geopandas.geodataframe.GeoDataFrame
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1105,29 +1027,32 @@
   
 
 
-<h1 id="module-civic_lib_geoshapefile_utils">Module <code>civic_lib_geo.shapefile_utils</code><a class="headerlink" href="#module-civic_lib_geoshapefile_utils" title="Permanent link">&para;</a></h1>
-<h2 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h2>
-<h3 id="pathself-args-kwargs"><code>Path(self, *args, **kwargs)</code><a class="headerlink" href="#pathself-args-kwargs" title="Permanent link">&para;</a></h3>
-<p>PurePath subclass that can make system calls.</p>
-<p>Path represents a filesystem path but unlike PurePath, also offers
-methods to do system calls on path objects. Depending on your system,
-instantiating a Path will return either a PosixPath or a WindowsPath
-object. You can also instantiate a PosixPath or WindowsPath directly,
-but cannot instantiate a WindowsPath on a POSIX system or vice versa.</p>
-<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
-<h3 id="convert_shapefile_to_geojsonshp_path-pathlibpath-geojson_path-pathlibpath-pathlibpath"><code>convert_shapefile_to_geojson(shp_path: pathlib.Path, geojson_path: pathlib.Path) -&gt; pathlib.Path</code><a class="headerlink" href="#convert_shapefile_to_geojsonshp_path-pathlibpath-geojson_path-pathlibpath-pathlibpath" title="Permanent link">&para;</a></h3>
-<p>Convert a shapefile to a GeoJSON file.</p>
-<p>Args:
-    shp_path (Path): Path to the source shapefile (.shp).
-    geojson_path (Path): Path to the output GeoJSON file.</p>
-<p>Returns:
-    Path: The path to the saved GeoJSON file.</p>
-<h3 id="load_shapefilepath-pathlibpath-geopandasgeodataframegeodataframe"><code>load_shapefile(path: pathlib.Path) -&gt; geopandas.geodataframe.GeoDataFrame</code><a class="headerlink" href="#load_shapefilepath-pathlibpath-geopandasgeodataframegeodataframe" title="Permanent link">&para;</a></h3>
-<p>Load a shapefile into a GeoDataFrame.</p>
-<p>Args:
-    path (Path): Path to the shapefile (.shp).</p>
-<p>Returns:
-    gpd.GeoDataFrame: A GeoDataFrame with geometries and attributes.</p>
+<h1 id="cli-reference">CLI Reference<a class="headerlink" href="#cli-reference" title="Permanent link">&para;</a></h1>
+<p>The <code>civic-geo</code> CLI is documented command-by-command below. Each link opens the
+auto-generated reference in <code>docs/api/</code>.</p>
+<h2 id="command-index">Command Index<a class="headerlink" href="#command-index" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Top-level app</strong></li>
+<li>
+<p><a href="../api/civic_lib_geo.cli.cli/"><code>civic_lib_geo.cli.cli</code></a></p>
+</li>
+<li>
+<p><strong>Subcommands</strong></p>
+</li>
+<li><a href="../api/civic_lib_geo.cli.check_size/"><code>check-size</code></a></li>
+<li><a href="../api/civic_lib_geo.cli.chunk_geojson/"><code>chunk-geojson</code></a></li>
+<li><a href="../api/civic_lib_geo.cli.read_props/"><code>read-props</code></a></li>
+<li><a href="../api/civic_lib_geo.cli.shapefile_to_geojson/"><code>shapefile-to-geojson</code></a></li>
+<li><a href="../api/civic_lib_geo.cli.simplify_geojson/"><code>simplify-geojson</code></a></li>
+<li><a href="../api/civic_lib_geo.cli.topojson_to_geojson/"><code>topojson-to-geojson</code></a></li>
+</ul>
+<h2 id="quick-help">Quick help<a class="headerlink" href="#quick-help" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># Show top-level help</span>
+civic-geo<span class="w"> </span>--help
+
+<span class="c1"># Show help for a subcommand</span>
+civic-geo<span class="w"> </span>&lt;subcommand&gt;<span class="w"> </span>--help
+</code></pre></div>
 
 
 
@@ -1182,10 +1107,10 @@ but cannot instantiate a WindowsPath on a POSIX system or vice versa.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

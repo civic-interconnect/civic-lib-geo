@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://civic-interconnect.github.io/civic-lib-core/dev/api/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../DEVELOPER/">
       
       
-        <link rel="next" href="../DEVELOPER/">
+        <link rel="next" href="civic_lib_geo.cli.cli/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -332,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cli.md" class="md-nav__link">
+      <a href="../cli/" class="md-nav__link">
         
   
   
@@ -359,8 +359,6 @@
       
   
   
-    
-  
   
   
     
@@ -373,11 +371,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -393,35 +393,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Developer Guide
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="README.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Readme
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -584,6 +561,577 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#civic_lib_geo" class="md-nav__link">
+    <span class="md-ellipsis">
+      civic_lib_geo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="civic_lib_geo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#civic_lib_geo.__main__" class="md-nav__link">
+    <span class="md-ellipsis">
+      __main__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#civic_lib_geo.cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      cli
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#civic_lib_geo.fips_utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      fips_utils
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#civic_lib_geo.geojson_utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      geojson_utils
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#civic_lib_geo.shapefile_utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      shapefile_utils
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#civic_lib_geo.topojson_utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      topojson_utils
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#civic_lib_geo.us_constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      us_constants
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    CLI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            CLI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.cli.cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.cli.cli
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.cli.check_size/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.cli.check_size
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.cli.chunk_geojson/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.cli.chunk_geojson
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.cli.read_props/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.cli.read_props
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.cli.shapefile_to_geojson/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.cli.shapefile_to_geojson
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.cli.simplify_geojson/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.cli.simplify_geojson
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.cli.topojson_to_geojson/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.cli.topojson_to_geojson
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Utilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Utilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.fips_utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.fips_utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.geojson_utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.geojson_utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.shapefile_utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.shapefile_utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.topojson_utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.topojson_utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="civic_lib_geo.us_constants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module civic_lib_geo.us_constants
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1176,7 +1724,12 @@ civic-geo chunk path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.cli.chunk_geojson.main" class="headerlink" title="Permanent link">&para;</a></h5>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">main</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">max_features</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;chunks&#39;</span><span class="p">),</span> <span class="n">all_files</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">main</span><span class="p">(</span>
+    <span class="n">path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span>
+    <span class="n">max_features</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span>
+    <span class="n">output_dir</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;chunks&#39;</span><span class="p">),</span>
+    <span class="n">all_files</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -1461,7 +2014,11 @@ civic-geo chunk path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.cli.cli.chunk_command" class="headerlink" title="Permanent link">&para;</a></h5>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">chunk_command</span><span class="p">(</span><span class="n">folder</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">FOLDER_ARG</span><span class="p">,</span> <span class="n">max_features</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span> <span class="n">single_file</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">SINGLE_FILE_OPT</span><span class="p">)</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">chunk_command</span><span class="p">(</span>
+    <span class="n">folder</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">FOLDER_ARG</span><span class="p">,</span>
+    <span class="n">max_features</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span>
+    <span class="n">single_file</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">SINGLE_FILE_OPT</span><span class="p">,</span>
+<span class="p">)</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -1621,7 +2178,9 @@ It initializes and runs the app, then returns a success status code.</p>
 
 
 <a href="#civic_lib_geo.cli.cli.shapefile_to_geojson_command" class="headerlink" title="Permanent link">&para;</a></h5>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">shapefile_to_geojson_command</span><span class="p">(</span><span class="n">shp_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">geojson_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">)</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">shapefile_to_geojson_command</span><span class="p">(</span>
+    <span class="n">shp_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">geojson_path</span><span class="p">:</span> <span class="n">Path</span>
+<span class="p">)</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -1658,7 +2217,11 @@ It initializes and runs the app, then returns a success status code.</p>
 
 
 <a href="#civic_lib_geo.cli.cli.simplify_command" class="headerlink" title="Permanent link">&para;</a></h5>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">simplify_command</span><span class="p">(</span><span class="n">folder</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">FOLDER_ARG</span><span class="p">,</span> <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span> <span class="n">single_file</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">SINGLE_FILE_OPT</span><span class="p">)</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">simplify_command</span><span class="p">(</span>
+    <span class="n">folder</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">FOLDER_ARG</span><span class="p">,</span>
+    <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span>
+    <span class="n">single_file</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">SINGLE_FILE_OPT</span><span class="p">,</span>
+<span class="p">)</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -1713,7 +2276,9 @@ It initializes and runs the app, then returns a success status code.</p>
 
 
 <a href="#civic_lib_geo.cli.cli.topojson_to_geojson_command" class="headerlink" title="Permanent link">&para;</a></h5>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">topojson_to_geojson_command</span><span class="p">(</span><span class="n">topo_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">geojson_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">)</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">topojson_to_geojson_command</span><span class="p">(</span>
+    <span class="n">topo_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">geojson_path</span><span class="p">:</span> <span class="n">Path</span>
+<span class="p">)</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -1947,7 +2512,11 @@ Useful for inspecting available fields before cleaning, chunking, or simplifying
 
 
 <a href="#civic_lib_geo.cli.read_props.read_props_one" class="headerlink" title="Permanent link">&para;</a></h5>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">read_props_one</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">output</span><span class="p">:</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_rows</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">read_props_one</span><span class="p">(</span>
+    <span class="n">path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span>
+    <span class="n">output</span><span class="p">:</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">max_rows</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+<span class="p">)</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2301,7 +2870,12 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.cli.simplify_geojson.main" class="headerlink" title="Permanent link">&para;</a></h5>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">main</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span> <span class="n">output</span><span class="p">:</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">all_files</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">main</span><span class="p">(</span>
+    <span class="n">path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span>
+    <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span>
+    <span class="n">output</span><span class="p">:</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">all_files</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2813,7 +3387,9 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.fips_utils.get_fips_by_state_code" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">get_fips_by_state_code</span><span class="p">(</span><span class="n">state_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">source</span><span class="p">:</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">get_fips_by_state_code</span><span class="p">(</span>
+    <span class="n">state_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">source</span><span class="p">:</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2965,7 +3541,9 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.fips_utils.get_state_fips_df" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">get_state_fips_df</span><span class="p">(</span><span class="n">source</span><span class="p">:</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">get_state_fips_df</span><span class="p">(</span>
+    <span class="n">source</span><span class="p">:</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3080,7 +3658,9 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.fips_utils.get_state_name_by_code" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">get_state_name_by_code</span><span class="p">(</span><span class="n">state_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">source</span><span class="p">:</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">get_state_name_by_code</span><span class="p">(</span>
+    <span class="n">state_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">source</span><span class="p">:</span> <span class="n">Path</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3373,7 +3953,14 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.geojson_utils.apply_to_geojson_folder" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">apply_to_geojson_folder</span><span class="p">(</span><span class="n">folder</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">action_fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">suffix</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;_processed.geojson&#39;</span><span class="p">,</span> <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_features</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">apply_to_geojson_folder</span><span class="p">(</span>
+    <span class="n">folder</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span>
+    <span class="n">action_fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">,</span>
+    <span class="o">*</span><span class="p">,</span>
+    <span class="n">suffix</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;_processed.geojson&#39;</span><span class="p">,</span>
+    <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">max_features</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3561,7 +4148,12 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.geojson_utils.chunk_geojson_features" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">chunk_geojson_features</span><span class="p">(</span><span class="n">geojson</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">max_features</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span> <span class="o">=</span> <span class="s1">&#39;chunks&#39;</span><span class="p">,</span> <span class="n">base_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;chunk&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Path</span><span class="p">]</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">chunk_geojson_features</span><span class="p">(</span>
+    <span class="n">geojson</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span>
+    <span class="n">max_features</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span>
+    <span class="n">output_dir</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span> <span class="o">=</span> <span class="s1">&#39;chunks&#39;</span><span class="p">,</span>
+    <span class="n">base_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;chunk&#39;</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Path</span><span class="p">]</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4236,7 +4828,9 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.geojson_utils.needs_chunking" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">needs_chunking</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">,</span> <span class="n">max_mb</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">25.0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">needs_chunking</span><span class="p">(</span>
+    <span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Path</span><span class="p">,</span> <span class="n">max_mb</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">25.0</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4458,7 +5052,9 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.geojson_utils.save_geojson" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">save_geojson</span><span class="p">(</span><span class="n">gdf</span><span class="p">:</span> <span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">indent</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Path</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">save_geojson</span><span class="p">(</span>
+    <span class="n">gdf</span><span class="p">:</span> <span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">indent</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Path</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4593,7 +5189,9 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.geojson_utils.simplify_geojson" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">simplify_geojson</span><span class="p">(</span><span class="n">gdf</span><span class="p">:</span> <span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">simplify_geojson</span><span class="p">(</span>
+    <span class="n">gdf</span><span class="p">:</span> <span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">tolerance</span><span class="p">:</span> <span class="nb">float</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4752,7 +5350,9 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.shapefile_utils.convert_shapefile_to_geojson" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">convert_shapefile_to_geojson</span><span class="p">(</span><span class="n">shp_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">geojson_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Path</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">convert_shapefile_to_geojson</span><span class="p">(</span>
+    <span class="n">shp_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">geojson_path</span><span class="p">:</span> <span class="n">Path</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Path</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -5012,7 +5612,9 @@ civic-geo simplify path/to/folder --all-files</p>
 
 
 <a href="#civic_lib_geo.topojson_utils.convert_topojson_to_geojson" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">convert_topojson_to_geojson</span><span class="p">(</span><span class="n">topojson_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">geojson_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Path</span>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">convert_topojson_to_geojson</span><span class="p">(</span>
+    <span class="n">topojson_path</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">geojson_path</span><span class="p">:</span> <span class="n">Path</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Path</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
