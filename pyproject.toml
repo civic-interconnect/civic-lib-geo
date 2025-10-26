@@ -41,6 +41,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [  # Add all to deptry ignores
   "build",
+  "pandas-stubs", 
   "pre-commit",
   "pytest",
   "pytest-asyncio",
@@ -122,6 +123,7 @@ package_module_name_map = {PyYAML = "yaml"  }
 DEP002 = [
   # Dependencies
   "fiona",
+  "pandas-stubs",
   "pyproj",
   "PyYAML",
   "rich",
