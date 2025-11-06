@@ -1,67 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/</loc>
-         <lastmod>2025-10-26</lastmod>
+         <loc>https://civic-interconnect.github.io/civic-lib-core/latest/</loc>
+         <lastmod>2025-11-06</lastmod>
     </url>
     <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/DEVELOPER/</loc>
-         <lastmod>2025-10-26</lastmod>
+         <loc>https://civic-interconnect.github.io/civic-lib-core/latest/api/</loc>
+         <lastmod>2025-11-06</lastmod>
     </url>
     <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/cli/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.cli.check_size/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.cli.chunk_geojson/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.cli.cli/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.cli.read_props/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.cli.shapefile_to_geojson/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.cli.simplify_geojson/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.cli.topojson_to_geojson/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.fips_utils/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.geojson_utils/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.shapefile_utils/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.topojson_utils/</loc>
-         <lastmod>2025-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://civic-interconnect.github.io/civic-lib-core/dev/api/civic_lib_geo.us_constants/</loc>
-         <lastmod>2025-10-26</lastmod>
+         <loc>https://civic-interconnect.github.io/civic-lib-core/latest/cli/</loc>
+         <lastmod>2025-11-06</lastmod>
     </url>
 </urlset>
