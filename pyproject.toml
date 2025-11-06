@@ -99,7 +99,7 @@ exclude_lines = [
   "@(abc\\.)?abstractmethod",
   "# pragma: no cover",
 ]
-fail_under = 25
+fail_under = 35
 precision = 1
 show_missing = true
 skip_covered = false
@@ -177,7 +177,6 @@ addopts = [
   "--cov-report=term-missing",  # term-missing:skip-covered is typical
   "--cov-report=xml:coverage.xml",  # output coverage in XML format
   "--cov-report=html:htmlcov",  # output coverage in HTML format
-  "--cov-fail-under=25",  # reasonable for core library
   "-v",  # verbose output
   "--tb=short",  # short traceback format
 ]
@@ -209,6 +208,8 @@ extend-select = [
   "C4",    # Catch incorrect use of comprehensions, dict, list, etc
   "C408",  # unnecessary comprehension
   "D",     # Docstring conventions
+  "D401",  # Missing argument descriptions in the docstring
+  "D417",  # First line should be in imperative mood (good habit)
   "Q",     # flake8-quotes
   "S",     # Security issues
   "C90",   # McCabe complexity
@@ -225,7 +226,6 @@ ignore = [
   "E501",  # line length handled by formatter
   "D203",  # 1 blank line before class docstring (conflicts with D211)
   "D213",  # Multi-line docstring summary should start at the second line
-  "D413",  # Missing blank line after last section
   "S101",  # assert statements (handled by bandit)
 ]
 
@@ -236,6 +236,9 @@ force-sort-within-sections = true
 "src/**/__init__.py" = ["D104", "F401"]  # F401 for re-exports
 "tests/**/*.py" = ["TID251", "TID252", "S101", "D", "PLR2004"]  # PLR2004 for magic values
 "src/**/_version.py" = ["ALL"] 
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
 
 [tool.setuptools]
 include-package-data = true
