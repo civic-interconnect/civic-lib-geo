@@ -89,6 +89,7 @@ Update `CHANGELOG.md` and `pyproject`.toml dependencies.
 Ensure CI passes.
 
 ```shell
+git add .
 uv run pre-commit run --all-files
 uv run pytest -q
 ```
