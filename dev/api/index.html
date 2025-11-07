@@ -4307,6 +4307,103 @@ including:</p>
 
 
 
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="civic_lib_geo.us_constants.StateTokens" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">StateTokens</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+<a href="#civic_lib_geo.us_constants.StateTokens" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+
+        <p>Canonical state identifiers with all representations.</p>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="civic_lib_geo.us_constants.StateTokens.legacy_dir_name_lowercase_with_underscores" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">legacy_dir_name_lowercase_with_underscores</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+<a href="#civic_lib_geo.us_constants.StateTokens.legacy_dir_name_lowercase_with_underscores" class="headerlink" title="Permanent link">&para;</a></h5>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="n">legacy_dir_name_lowercase_with_underscores</span><span class="p">:</span> <span class="nb">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Legacy directory name (full state name lowercase with underscores).</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="civic_lib_geo.us_constants.StateTokens.iso_dir_name" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">iso_dir_name</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+<a href="#civic_lib_geo.us_constants.StateTokens.iso_dir_name" class="headerlink" title="Permanent link">&para;</a></h5>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="n">iso_dir_name</span><span class="p">:</span> <span class="nb">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>ISO-standardized directory name (lowercase abbreviation).</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
 
 <div class="doc doc-object doc-function">
 
@@ -4442,6 +4539,97 @@ including:</p>
     <div class="doc doc-contents ">
 
         <p>Return the standardized directory name for a state (full lowercase name with underscores).</p>
+<p>DEPRECATED: Use get_state_tokens().legacy_dir_name_lowercase_with_underscores or .iso_dir_name instead.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="civic_lib_geo.us_constants.get_state_tokens" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">get_state_tokens</span>
+
+
+<a href="#civic_lib_geo.us_constants.get_state_tokens" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="doc-signature codehilite"><pre><span></span><code><span class="nf">get_state_tokens</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StateTokens</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Get all canonical forms of a state identifier.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>value</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Any state identifier - 'MN', 'mn', 'Minnesota', '27', etc.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="StateTokens
+
+
+  
+      dataclass
+   (civic_lib_geo.us_constants.StateTokens)" href="#civic_lib_geo.us_constants.StateTokens">StateTokens</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>StateTokens with all canonical forms</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="codehilite"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">tokens</span> <span class="o">=</span> <span class="n">get_state_tokens</span><span class="p">(</span><span class="s1">&#39;Minnesota&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tokens</span><span class="o">.</span><span class="n">abbr_uppercase</span>
+<span class="go">&#39;MN&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tokens</span><span class="o">.</span><span class="n">iso_dir_name</span>
+<span class="go">&#39;mn&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tokens</span><span class="o">.</span><span class="n">legacy_dir_name_lowercase_with_underscores</span>
+<span class="go">&#39;minnesota&#39;</span>
+</code></pre></div>
 
 
     </div>
