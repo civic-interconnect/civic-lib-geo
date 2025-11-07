@@ -14,6 +14,13 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ---
 
+## [0.3.0] - 2025-11-06
+
+### Updated
+- more us state features 
+
+---
+
 ## [0.2.9] - 2025-11-06
 
 ### Updated
@@ -72,7 +79,8 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
   Tag the repository with `vX.Y.Z` to publish a release.
 - Documentation and badges are updated per tag and aliased to **latest**.
 
-[Unreleased]: https://github.com/civic-interconnect/civic-transparency-py-sdk/compare/v0.2.9...HEAD
+[Unreleased]: https://github.com/civic-interconnect/civic-transparency-py-sdk/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/civic-interconnect/civic-transparency-py-sdk/releases/tag/v0.3.0
 [0.2.9]: https://github.com/civic-interconnect/civic-transparency-py-sdk/releases/tag/v0.2.9
 [0.2.8]: https://github.com/civic-interconnect/civic-transparency-py-sdk/releases/tag/v0.2.8
 [0.2.7]: https://github.com/civic-interconnect/civic-transparency-py-sdk/releases/tag/v0.2.7

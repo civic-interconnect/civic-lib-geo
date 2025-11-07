@@ -99,7 +99,7 @@ exclude_lines = [
   "@(abc\\.)?abstractmethod",
   "# pragma: no cover",
 ]
-fail_under = 35
+fail_under = 40
 precision = 1
 show_missing = true
 skip_covered = false

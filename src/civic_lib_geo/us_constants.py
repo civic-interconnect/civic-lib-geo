@@ -14,6 +14,8 @@ including:
 These constants are used to standardize geodata processing and support consistent reporting.
 """
 
+from dataclasses import dataclass
+
 __all__ = [
     "US_STATE_CODES",
     "US_STATE_ABBR_TO_NAME",
@@ -273,6 +275,59 @@ def list_state_choices_by_fips() -> list[tuple[str, str]]:
 
 
 def get_state_dir_name(state_abbr: str) -> str:
-    """Return the standardized directory name for a state (full lowercase name with underscores)."""
+    """Return the standardized directory name for a state (full lowercase name with underscores).
+
+    DEPRECATED: Use get_state_tokens().legacy_dir_name_lowercase_with_underscores or .iso_dir_name instead.
+    """
     name = US_STATE_ABBR_TO_NAME[state_abbr]
     return name.lower().replace(" ", "_")
+
+
+@dataclass(frozen=True)
+class StateTokens:
+    """Canonical state identifiers with all representations."""
+
+    abbr_uppercase: str  # 'MN'
+    abbr_lowercase: str  # 'mn'
+    fips: str  # '27'
+    full_name: str  # 'Minnesota'
+
+    @property
+    def legacy_dir_name_lowercase_with_underscores(self) -> str:
+        """Legacy directory name (full state name lowercase with underscores)."""
+        return self.full_name.lower().replace(" ", "_")
+
+    @property
+    def iso_dir_name(self) -> str:
+        """ISO-standardized directory name (lowercase abbreviation)."""
+        return self.abbr_lowercase
+
+
+def get_state_tokens(value: str | None) -> StateTokens:
+    """Get all canonical forms of a state identifier.
+
+    Args:
+        value: Any state identifier - 'MN', 'mn', 'Minnesota', '27', etc.
+
+    Returns:
+        StateTokens with all canonical forms
+
+    Examples:
+        >>> tokens = get_state_tokens('Minnesota')
+        >>> tokens.abbr_uppercase
+        'MN'
+        >>> tokens.iso_dir_name
+        'mn'
+        >>> tokens.legacy_dir_name_lowercase_with_underscores
+        'minnesota'
+    """
+    rec = get_state_record_by_any(value or "")
+    if not rec or "abbr" not in rec:
+        raise ValueError(f"Unrecognized state: {value!r}")
+
+    return StateTokens(
+        abbr_uppercase=rec["abbr"],
+        abbr_lowercase=rec["abbr"].lower(),
+        fips=rec["fips"],
+        full_name=rec["name"],
+    )
