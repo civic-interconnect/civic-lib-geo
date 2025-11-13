@@ -18,4 +18,5 @@ Or add to pyproject.toml dependencies.
 
 ## Development
 
+See [CONTRIBUTING.md](./CONTRIBUTING.md)
 See [DEVELOPER.md](./DEVELOPER.md)

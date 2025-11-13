@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/civic-interconnect/civic-ptag-core-schema/main/schema/ptag.core.schema.json",
+  "prefix": {
+    "prov": "http://www.w3.org/ns/prov#",
+    "civic": "https://civicinterconnect.org/ns#"
+  },
+  "entity": {
+    "entity:civic_lib_geo": {
+      "prov:label": "civic-lib-geo",
+      "type": "software",
+      "license": "MIT",
+      "releaseTag": "v0.4.0"
+    }
+  },
+  "agent": {
+    "agent:maintainer": {
+      "prov:type": "prov:Organization",
+      "name": "Civic Interconnect"
+    }
+  },
+  "activity": {
+    "activity:release_v0_4_0": {
+      "prov:label": "Release build v0.4.0",
+      "reproCommand": "uv build && uv publish"
+    }
+  },
+  "wasGeneratedBy": {
+    "_:g1": {
+      "prov:entity": "entity:civic_lib_geo",
+      "prov:activity": "activity:release_v0_4_0"
+    }
+  },
+  "wasAttributedTo": {
+    "_:a1": {
+      "prov:entity": "entity:civic_lib_geo",
+      "prov:agent": "agent:maintainer"
+    }
+  }
+}

@@ -1,6 +1,11 @@
 # .github/workflows/deploy-docs.yml
 name: Docs Deploy (MkDocs)
 
+# It builds and deploys the latest version of the documentation to GitHub Pages.
+# IMPORTANT: Ensure Repo Settings / Pages / Build and deployment / Set Source to `Deploy from a branch`,
+# and set Branch = `gh-pages`, Folder = `/`.
+# Note: mike manages dev/ and versioned docs on gh-pages branch.
+
 on:
   push:
     branches: [ main ]
