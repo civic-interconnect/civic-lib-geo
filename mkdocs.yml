@@ -1,10 +1,10 @@
 # mkdocs.yml
 # Configuration file for MkDocs (Automated project documentation generator)
 
-site_name: Civic Lib Core
-site_url: https://civic-interconnect.github.io/civic-lib-core/
-repo_url: https://github.com/civic-interconnect/civic-lib-core
-site_description: Core library for Civic Interconnect projects.
+site_name: Civic Lib Geo
+site_url: https://civic-interconnect.github.io/civic-lib-geo/
+repo_url: https://github.com/civic-interconnect/civic-lib-geo
+site_description: Geo library for Civic Interconnect projects.
 site_author: Civic Interconnect
 docs_dir: docs
 site_dir: site
@@ -13,7 +13,7 @@ copyright: Copyright &copy; 2025 Civic Interconnect
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/civic-interconnect/civic-lib-core
+      link: https://github.com/civic-interconnect/civic-lib-geo
   version:
     provider: mike
 
@@ -75,9 +75,6 @@ markdown_extensions:
   - pymdownx.tabbed # Tabbed content
   
 nav:
-  - User Guide:
-      - Home: index.md
-      - CLI Reference: cli.md
-  - API Reference:
-      - Civic Geo API: api.md
-
+  - Home: index.md
+  - API Reference: api.md
+  - CLI Reference: cli.md

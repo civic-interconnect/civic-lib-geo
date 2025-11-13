@@ -2,7 +2,7 @@
 
 TopoJSON utility functions for Civic Interconnect.
 
-MIT License — maintained by Civic Interconnect
+
 """
 
 from pathlib import Path

@@ -1,11 +1,11 @@
 [build-system]
 build-backend = "setuptools.build_meta"
-requires = ["setuptools>=77", "wheel", "setuptools-scm>=8"]
+requires = ["setuptools>=77", "setuptools-scm>=8"]
 
 [project]
-name = "civic-lib-geo"
+name = "civic-lib-geo" # Package name
 dynamic = ["version"]  # Using setuptools_scm
-description = "Shared internal geo library for Civic Interconnect"
+description = "Shared geo library for Civic Interconnect"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
@@ -14,27 +14,23 @@ authors = [
 classifiers = [
   "Development Status :: 4 - Beta",
   "Intended Audience :: Developers",
-  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Education",
+  "Natural Language :: English",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
   "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
 ]
 keywords = ["civic", "gis", "library", "utilities"]
 dependencies = [
     "civic-lib-core",
-    "defusedxml",
-    "fiona",
     "geopandas",
     "pandas",
-    "pyproj",
-    "PyYAML",
-    "rich",
-    "rtree",
     "shapely",
-    "topojson",
     "typer",
 ]
 
@@ -43,6 +39,7 @@ dev = [  # Add all to deptry ignores
   "build",
   "pandas-stubs", 
   "pre-commit",
+  "pyright",
   "pytest",
   "pytest-asyncio",
   "pytest-cov",
@@ -64,9 +61,9 @@ docs = [  # Add all to deptry ignores
 ]
 
 [project.urls]
-"Bug Tracker" = "https://github.com/civic-interconnect/civic-lib-geo/issues"
 "Documentation" = "https://civic-interconnect.github.io/civic-lib-geo/"
 "Homepage" = "https://github.com/civic-interconnect/civic-lib-geo"
+"Issues" = "https://github.com/civic-interconnect/civic-lib-geo/issues"
 "Source" = "https://github.com/civic-interconnect/civic-lib-geo"
 
 [project.scripts]
@@ -119,21 +116,14 @@ output = "coverage.xml"
 [tool.deptry]
 known_first_party = ["civic_lib_geo"]
 package_module_name_map = {PyYAML = "yaml"  }
+
 [tool.deptry.per_rule_ignores]
 DEP002 = [
-  # Dependencies
-  "fiona",
-  "pandas-stubs",
-  "pyproj",
-  "PyYAML",
-  "rich",
-  "rtree",
-  "shapely",
-  "topojson",
   # Dev dependencies
   "build",
-  "defusedxml",
+  "pandas-stubs", 
   "pre-commit",
+  "pyright",
   "pytest",
   "pytest-asyncio",
   "pytest-cov",
@@ -154,22 +144,15 @@ DEP002 = [
 ]
 
 [tool.pyright]
-executionEnvironments = [
-  {root = "src", extraPaths = ["src"]},
-  {root = "tests", extraPaths = ["src"]},
-]
+extraPaths = ["./src"]
 ignore = ["**/__pycache__", "build", "dist", ".venv"]
 include = ["src", "tests"]
 pythonVersion = "3.12"
 reportMissingTypeStubs = "warning"
 typeCheckingMode = "basic" # or "strict"
-venv = ".venv"
-venvPath = "."
+# reportReturnType = "none"
 
-[tool.pytest.env]
-PYTEST_CURRENT_TEST = "true"
-
-[tool.pytest.ini_options]
+[tool.pytest]
 addopts = [
   "-ra",  # show extra test summary info for skipped, failed, etc.
   "--strict-markers",  # enforce marker usage
@@ -180,8 +163,7 @@ addopts = [
   "-v",  # verbose output
   "--tb=short",  # short traceback format
 ]
-minversion = "7.0"
-python_files = "test_*.py"
+minversion = "9.0"
 pythonpath = ["src"]
 testpaths = ["tests"]
 
@@ -209,7 +191,7 @@ extend-select = [
   "C408",  # unnecessary comprehension
   "D",     # Docstring conventions
   "D401",  # Missing argument descriptions in the docstring
-  "D417",  # First line should be in imperative mood (good habit)
+  "D417",  # First line should be in imperative mood
   "Q",     # flake8-quotes
   "S",     # Security issues
   "C90",   # McCabe complexity
@@ -242,14 +224,12 @@ convention = "google"
 
 [tool.setuptools]
 include-package-data = true
-license-files = ["LICENSE"]
 package-dir = {"" = "src"}
 
 [tool.setuptools.package-data]
 "civic_lib_geo" = ["py.typed", "*.yaml"]
 
 [tool.setuptools.packages.find]
-namespaces = false # TODO: change when we move to civic.geo
 where = ["src"]
 
 [tool.setuptools_scm]

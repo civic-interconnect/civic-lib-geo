@@ -2,7 +2,7 @@
 
 GeoJSON utility functions for Civic Interconnect.
 
-MIT License — maintained by Civic Interconnect
+
 """
 
 from collections.abc import Callable
